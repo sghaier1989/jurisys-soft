@@ -28,6 +28,32 @@ $warning: #6c6b6a;
 $danger: $red !default;
 $light: $cyan !default;
 $dark: $cyan !default;
+
+$theme-colors: () !default;
+$theme-colors: map-merge(
+  (
+    'primary': $primary,
+    'secondary': $secondary,
+    'success': $success,
+    'info': $info,
+    'warning': $warning,
+    'danger': $danger,
+    'dark': $dark,
+  ),
+  $theme-colors
+);
+
+$shape-colors: () !default;
+$shape-colors: map-merge(
+  (
+    'default': #000000,
+    'primary': #5533ff,
+    'secondary': #24b47e,
+    'neutral': #e9ecef,
+    'blue-gray': #b2cbe1,
+  ),
+  $shape-colors
+);
 // If you want to customize your project please add your variables below.
 
 $enable-rtl: true; /* stylelint-disable-line scss/dollar-variable-default */
